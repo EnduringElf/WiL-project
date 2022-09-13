@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class Boyancyobject : MonoBehaviour
+public class Boyancy_object : MonoBehaviour
 {
     public float Underwaterdrag = 3;
     public float UnderwaterAnulardrag = 1;
