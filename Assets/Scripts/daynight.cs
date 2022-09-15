@@ -8,7 +8,7 @@ public class daynight : MonoBehaviour
 {
     [SerializeField] private Light DirectionalLight;
     [SerializeField] private lightingpresets presets;
-    [SerializeField, Range(0,60)] private float TimeOfDay;
+    [SerializeField, Range(0,900)] private float TimeOfDay;
 
     private void UpdateLighting(float timepercent)
 
@@ -72,26 +72,26 @@ public class daynight : MonoBehaviour
 
         {
             TimeOfDay += Time.deltaTime;
-            TimeOfDay %= 60;                          // add time to day night cycle here and
-            UpdateLighting(TimeOfDay / 60f);          // here
+            TimeOfDay %= 900;                          // add time to day night cycle here and
+            UpdateLighting(TimeOfDay / 900f);          // here
         }
 
         
         else
         {
-            UpdateLighting(TimeOfDay / 60f);
+            UpdateLighting(TimeOfDay / 900f);
         }
 
-        if (TimeOfDay > 46)                        // turns light off at night
+        if (TimeOfDay > 700)                        // turns light off at night
 
         {
             DirectionalLight.intensity = 0f;
         }
 
-        if (TimeOfDay < 46)               //turns light back on at dawn
+        //if (TimeOfDay < 500)               //turns light back on at dawn
 
-        {
-            DirectionalLight.intensity = 0.7f;
-        }
+        //{
+        //    DirectionalLight.intensity = 0.7f;
+        //}
     }
 }
