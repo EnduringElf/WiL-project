@@ -85,10 +85,7 @@ public class daynight : MonoBehaviour
         float randomNumber = Random.Range(1, 4);
       
 
-        Debug.Log(DarkFishWater.transform.position);
-
-
-        Debug.Log(a.transform.position + b.transform.position + c.transform.position + d.transform.position);
+      
 
 
         if (randomNumber == 1)
