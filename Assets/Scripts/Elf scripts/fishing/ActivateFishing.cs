@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,15 +6,20 @@ using UnityEngine;
 public class ActivateFishing : MonoBehaviour
 {
     
-
     private void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player")
         {
 
             other.GetComponent<GameState>().Prompt(true);
+            addthisZonetoGameState(other.gameObject);
             
         }
+    }
+
+    private void addthisZonetoGameState(GameObject t)
+    {
+        t.GetComponent<GameState>().ZoneController = this.gameObject.GetComponentInParent<FishSpotContrller>().gameObject;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -21,6 +27,7 @@ public class ActivateFishing : MonoBehaviour
         if(other.tag == "Player")
         {
             other.GetComponent<GameState>().Prompt(true);
+            addthisZonetoGameState(other.gameObject);
 
         }
     }
@@ -31,6 +38,7 @@ public class ActivateFishing : MonoBehaviour
         {
 
             other.GetComponent<GameState>().Prompt(false);
+            other.GetComponent<GameState>().ZoneController = null;
         }
     }
 }

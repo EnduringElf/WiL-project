@@ -15,6 +15,8 @@ public class GameState : MonoBehaviour
 
     public GameObject PerfectZoneControls;
 
+    public GameObject ZoneController;
+
     private FIshingControls FishContrls;
     
     
@@ -35,6 +37,7 @@ public class GameState : MonoBehaviour
         if (IsFishing == false && Input.GetKeyDown(KeyCode.E))
         {
             gameObject.GetComponent<playerControls>().Active = false;
+            ZoneController.GetComponent<FishSpotContrller>().Active = true;
             Prompt(0);
             StartFishingGame();
         }

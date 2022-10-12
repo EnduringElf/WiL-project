@@ -13,8 +13,8 @@ public class PerfectZoneController : MonoBehaviour
     public GameObject GameState;
     public GameObject FishingCntls;
 
-    private float min;
-    private float max;
+    public  float min;
+    public float max;
 
     public float MTimer;
     private float timer = 0;
@@ -33,8 +33,9 @@ public class PerfectZoneController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        min = Startpoint.GetComponent<RectTransform>().localPosition.x;
-        max = EndPoint.GetComponent<RectTransform>().localPosition.x;
+        min = -350;
+        
+        max = 350;
     }
 
     public void NewGame()
@@ -82,7 +83,7 @@ public class PerfectZoneController : MonoBehaviour
     private void GetnewPerfectZone()
     {
         rand = Random.Range(min, max - 200);
-
+        //Debug.Log(min);
         endRand = Random.Range(100, 400);
 
 
