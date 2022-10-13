@@ -1,9 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class Boyancyobject : MonoBehaviour
+public class test : MonoBehaviour
 {
     public float Underwaterdrag = 3;
     public float UnderwaterAnulardrag = 1;
@@ -12,6 +13,11 @@ public class Boyancyobject : MonoBehaviour
     public float Airanulardrag = 0.05f;
 
     public float floating_power;
+    //public int floatpower;
+    //bool floatup;
+    //private float timer = 2;
+    //public int TimerM;
+
 
     Rigidbody m_Rigidbody;
 
@@ -19,12 +25,22 @@ public class Boyancyobject : MonoBehaviour
 
     public float waterHieght = 0f;
 
-
-
-    // Start is called before the first frame update
     void Start()
     {
         m_Rigidbody = GetComponent<Rigidbody>();
+    }
+
+    private void Update()
+    {
+        //if (timer >= 0)
+        //{
+        //    floating_powerSwitch();
+        //    timer = TimerM;
+        //}
+        //else
+        //{
+        //    timer -= Time.deltaTime;
+        //}
     }
 
     // Update is called once per frame
@@ -46,7 +62,24 @@ public class Boyancyobject : MonoBehaviour
             underwater = false;
             switchState(false);
         }
+        
+        
+
     }
+
+    //private void floating_powerSwitch()
+    //{
+    //    if(floatup == true)
+    //    {
+    //        floating_power += floatpower;
+    //        floatup = false;
+    //    }
+    //    else
+    //    {
+    //        floatup = true;
+    //        floating_power -= floatpower;
+    //    }
+    //}
 
     void switchState(bool Isunderwater)
     {
@@ -64,3 +97,4 @@ public class Boyancyobject : MonoBehaviour
         }
     }
 }
+

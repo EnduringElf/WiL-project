@@ -31,7 +31,7 @@ Material:
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2225
+  m_CustomRenderQueue: 3000
   stringTagMap: {}
   disabledShaderPasses:
   - TransparentDepthPrepass
@@ -69,6 +69,7 @@ Material:
     - _CullModeForward: 2
     - _DepthOffsetEnable: 0
     - _Distance: 0
+    - _Distortion: 5
     - _DoubleSidedEnable: 0
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 2
