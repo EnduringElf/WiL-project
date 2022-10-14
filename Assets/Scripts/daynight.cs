@@ -9,6 +9,7 @@ public class daynight : MonoBehaviour
     [SerializeField, Range(0, 900)] private float TimeOfDay;
    
     //spawn spots
+ 
     GameObject a;
     GameObject b;
     GameObject c;
