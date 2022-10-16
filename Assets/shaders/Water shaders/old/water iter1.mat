@@ -62,14 +62,14 @@ Material:
     - _AlphaSrcBlend: 1
     - _AlphaToMask: 0
     - _AlphaToMaskInspectorValue: 0
-    - _Base_ripple_speed: 1.5
+    - _Base_ripple_speed: 2
     - _BlendMode: 0
     - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 2
     - _CullModeForward: 2
     - _DepthOffsetEnable: 0
-    - _Distance: 0.34
-    - _Distortion: 17.43
+    - _Distance: 0.05
+    - _Distortion: 10.24
     - _DoubleSidedEnable: 0
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 2
@@ -77,10 +77,10 @@ Material:
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
     - _Float: 5.14
-    - _Gloss: 2.6
-    - _Metalic: -0.63
-    - _Nomral_speed: 50
-    - _Normal_vor: 47.4
+    - _Gloss: 0.8
+    - _Metalic: 0.13
+    - _Nomral_speed: 1
+    - _Normal_vor: 1
     - _OpaqueCullMode: 2
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -90,7 +90,7 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
-    - _Ripple_amount: 3800
+    - _Ripple_amount: 1084.17
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 8
@@ -116,19 +116,20 @@ Material:
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
     - _ZWrite: 1
-    - _alpha: 0.26
-    - _cell_power: 11
-    - _emissive: 0.26
-    - _fernell_effect_power: -0.77
-    - _foam_offset: 9.8
-    - _foam_power: 9.88
+    - _alpha: 0.1
+    - _cell_power: 5.3
+    - _edge_power: 0.01
+    - _emissive: 0.1
+    - _fernell_effect_power: 4.1
+    - _foam_offset: 15.07
+    - _foam_power: 34.72
     m_Colors:
-    - _Base_colour: {r: 0.02745098, g: 0.7490196, b: 1, a: 1}
+    - _Base_colour: {r: 0, g: 1, b: 1, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Foam_colour: {r: 0.8962264, g: 0, b: 0, a: 1}
-    - _Secondary_colou: {r: 0.28033543, g: 0, b: 1, a: 1}
-    - _ripple_colour: {r: 0.34509805, g: 8, b: 2.792157, a: 0.5372549}
+    - _Foam_colour: {r: 1, g: 1, b: 1, a: 1}
+    - _Secondary_colou: {r: 0.40436557, g: 0.1745283, b: 1, a: 1}
+    - _ripple_colour: {r: 0.30725315, g: 0.79885817, b: 0.47453544, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &8101943630793417213
 MonoBehaviour:

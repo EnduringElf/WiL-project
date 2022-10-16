@@ -54,8 +54,8 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _noise: 795.8
-    - _power: 2.6
+    - _power: 3.36
     m_Colors:
     - _Base: {r: 0.26539046, g: 0.6156863, b: 0, a: 1}
-    - _SecondaryColour: {r: 1, g: 0.7316223, b: 0.5518868, a: 1}
+    - _SecondaryColour: {r: 0.20122819, g: 0.23987253, b: 0.78431374, a: 1}
   m_BuildTextureStacks: []
