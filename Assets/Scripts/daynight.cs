@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class daynight : MonoBehaviour
 {
@@ -17,7 +18,9 @@ public class daynight : MonoBehaviour
     GameObject e;
     GameObject f;
     GameObject g;
+  
     GameObject h;
+  public  GameObject daynightPreserve;
     GameObject i;
     public GameObject DarkFishWater;
     public bool IsFIshing = false;
@@ -68,8 +71,9 @@ public class daynight : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    
- 
+        
+
+
         TimeOfDay = 215;
         a = GameObject.Find("FishingSpotSpawner");
         b = GameObject.Find("FishingSpotSpawner (1)");
@@ -114,8 +118,15 @@ public class daynight : MonoBehaviour
     void Update()
     {
 
+        DontDestroyOnLoad(daynightPreserve);
+        if (Input.GetKeyDown(KeyCode.L))
 
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
 
+            Debug.Log("L pressed");
+         
+        }
         if (presets == null)
 
         {
