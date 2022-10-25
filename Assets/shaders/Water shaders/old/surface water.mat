@@ -40,8 +40,8 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _ripple_amoutn: 49.4
-    - _ripple_power: 5
+    - _ripple_amoutn: 737.69
+    - _ripple_power: 8.91
     - _ripple_speed: 1
     m_Colors:
     - _base_colour: {r: 0, g: 1, b: 0.9683551, a: 0}
