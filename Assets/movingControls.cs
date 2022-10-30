@@ -19,24 +19,24 @@ public class movingControls : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             //Move the Rigidbody forwards constantly at speed you define (the blue arrow axis in Scene view)
-            transform.position += Vector3.back * Time.deltaTime * movementSpeed;
+            transform.position += Vector3.left * Time.deltaTime * movementSpeed;
         }
 
         if (Input.GetKey(KeyCode.A))
         {
             //Move the Rigidbody forwards constantly at speed you define (the blue arrow axis in Scene view)
-            transform.position += Vector3.right * Time.deltaTime * movementSpeed;
+            transform.position += Vector3.back * Time.deltaTime * movementSpeed;
         }
         if (Input.GetKey(KeyCode.S))
         {
             //Move the Rigidbody forwards constantly at speed you define (the blue arrow axis in Scene view)
-            transform.position += Vector3.forward * Time.deltaTime * movementSpeed;
+            transform.position += Vector3.right * Time.deltaTime * movementSpeed;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
             //Move the Rigidbody forwards constantly at speed you define (the blue arrow axis in Scene view)
-            transform.position += Vector3.left * Time.deltaTime * movementSpeed;
+            transform.position += Vector3.forward * Time.deltaTime * movementSpeed;
         }
 
 
