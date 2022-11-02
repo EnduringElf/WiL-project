@@ -44,6 +44,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AddPrecomputedVelocity: 0
+    - _Alpha: 1.0004307
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 10
     - _AlphaSrcBlend: 1
@@ -61,10 +62,12 @@ Material:
     - _DstBlend: 10
     - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
-    - _Foam_Amount: 20.4
+    - _Foam_Amount: 53
     - _Foam_Cutoff: 4.1
-    - _Foam_Scale: 454.27
+    - _Foam_Scale: 294.4
     - _Foam_power: 7.72
+    - _Gloss: 0
+    - _Metalic: 0
     - _OpaqueCullMode: 2
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -93,24 +96,24 @@ Material:
     - _UseShadowThreshold: 0
     - _Voronoi_speed: 1
     - _Water_Speed: 1
-    - _Water_noise_Scale: 1
+    - _Water_noise_Scale: 0
     - _Wave_Size: 0.03
     - _ZTestDepthEqualForOpaque: 4
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
     - _ZWrite: 0
-    - _cell_power: 5.6
-    - _foam_speed: 1
+    - _cell_power: 9.45
+    - _foam_speed: 0.3
     - _refraxtion_strength: 0.03
-    - _voronoi_scale: 711.1
+    - _voronoi_scale: 1593.42
     m_Colors:
-    - _Base_Color: {r: 0.09131365, g: 0.7107891, b: 0.7169812, a: 1}
+    - _Base_Color: {r: 0, g: 0.6784314, b: 0.6509804, a: 1}
     - _Base_Colour: {r: 0.09131365, g: 0.7107891, b: 0.7169812, a: 1}
-    - _Deep_Color: {r: 0, g: 0.5645095, b: 0.62352943, a: 1}
+    - _Deep_Color: {r: 0, g: 0.8117647, b: 0.77254903, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _foam_color: {r: 0.5223834, g: 0.8584906, b: 0.81233776, a: 1}
-    - _secondary_color: {r: 0.35088107, g: 0.83963966, b: 0.8962264, a: 0}
+    - _foam_color: {r: 1, g: 1, b: 1, a: 1}
+    - _secondary_color: {r: 0.46666667, g: 0.8745098, b: 0.9254902, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &2840052303749876543
 MonoBehaviour:
