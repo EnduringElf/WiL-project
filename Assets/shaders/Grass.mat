@@ -53,13 +53,9 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _blend_opacity: -0.04
-    - _noise: 510.41
-    - _power: 1.2
-    - _step_power: 0.415
+    - _noise: 795.8
+    - _power: 2.6
     m_Colors:
-    - _Base: {r: 0.40411827, g: 0.9339623, b: 0.14901961, a: 1}
-    - _SecondaryColour: {r: 0.20091671, g: 0.20959267, b: 0.3301887, a: 1}
-    - _offset: {r: 1, g: 1, b: 0, a: 0}
-    - _tiling: {r: 1, g: 1, b: 0, a: 0}
+    - _Base: {r: 0.26539046, g: 0.6156863, b: 0, a: 1}
+    - _SecondaryColour: {r: 1, g: 0.7316223, b: 0.5518868, a: 1}
   m_BuildTextureStacks: []

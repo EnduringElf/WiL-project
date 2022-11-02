@@ -12,7 +12,6 @@ public class PerfectZoneController : MonoBehaviour
     public GameObject FillZone;
     public GameObject GameState;
     public GameObject FishingCntls;
-    public GameObject FishSpotController;
 
     public  float min;
     public float max;
@@ -23,7 +22,6 @@ public class PerfectZoneController : MonoBehaviour
     public float playerValue;
     public float progress;
     public float progressValue;
-    public float MInusProgess;
     public float proegreeM;
 
     float rand;
@@ -52,11 +50,8 @@ public class PerfectZoneController : MonoBehaviour
     {
         if(progress > proegreeM - 1)
         {
-            if(GameState.GetComponent<GameState>().CanContinue == false)
-            {
-                GameState.GetComponent<GameState>().CaughtFsih(GameState.GetComponent<GameState>().ZoneController.GetComponent<FishSpotContrller>().GetrandomFish());
-            }
             
+            GameState.GetComponent<GameState>().EndFishingGame();
         }
         else
         {
@@ -68,7 +63,7 @@ public class PerfectZoneController : MonoBehaviour
             }
             else if (progress > 0)
             {
-                progress -= MInusProgess;
+                progress -= progressValue;
                 completionSlider.GetComponent<UnityEngine.UI.Slider>().value = progress;
             }
 
@@ -97,12 +92,9 @@ public class PerfectZoneController : MonoBehaviour
             endRand = 200;
         }
         //Debug.Log(endRand);
-        
 
         Startpoint.GetComponent<RectTransform>().localPosition = new Vector3(rand, 0, 0);
         EndPoint.GetComponent<RectTransform>().localPosition = new Vector3(rand + endRand, 0, 0);
-        FillZone.GetComponent<RectTransform>().localPosition = new Vector3((rand + (endRand/2)), 0, 0);
-        FillZone.GetComponent<RectTransform>().localScale = new Vector3((rand + endRand) - rand, 0.2f, 1);
         timer = 0;
     }
 }

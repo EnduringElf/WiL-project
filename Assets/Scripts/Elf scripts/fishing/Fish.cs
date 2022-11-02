@@ -1,23 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "FishData", menuName = "Assets/Fish", order = 1)]
 public class Fish : ScriptableObject
 {
-    [Header("Name")]
     public string Name;
-    [Header("Portrait")]
-    public Image Portrait;
-    [Header("Values")]
     public float BaseCurrency;
     public float Wieght;
-    public float MAxRandomWieght;
-    public float FinalWieght;
-    public float FinalValue;
+    public float RandomWieght;
 
-    public bool valuescanChange = true;
+    public float FinalValue;
 
     public Fish(string name, float baseCurrency, float wieght)
     {
@@ -26,30 +19,15 @@ public class Fish : ScriptableObject
         Wieght = wieght;
     }
 
-    
-
     public float GetvariableWieght()
     {
-        if(valuescanChange == true)
-        {
-            FinalWieght = Wieght + Random.Range(0, MAxRandomWieght);
-            FinalWieght = (float)Mathf.Round(FinalWieght * 100f) / 100f;
-            return FinalWieght;
-        }
-        return FinalWieght;
-
+        Wieght = Wieght + Random.Range(0, RandomWieght);
+        return Wieght;
     }
 
-    public float GetFinalValue()
+    public void GetFinalValue()
     {
-        if (valuescanChange == true)
-        {
-            FinalValue = BaseCurrency * GetvariableWieght();
-            FinalValue = (float)Mathf.Round(FinalValue * 100f) / 100f;
-            return FinalValue;
-        }
-        return FinalValue;
-           
+        FinalValue = BaseCurrency * GetvariableWieght();
     }
 
     
