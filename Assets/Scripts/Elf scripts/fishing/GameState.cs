@@ -79,7 +79,7 @@ public class GameState : MonoBehaviour
 
     public void CaughtFsih(Fish f)
     {
-        Player.GetComponent<Inventory>().InventoryObjects.Add(f);
+        Player.GetComponent<Inventory>().InventoryFish.Add(f);
         FishCaughtUi.SetActive(true);
         FishPortrait.sprite = f.Portrait;
         FishName.text = f.Name;
@@ -93,7 +93,7 @@ public class GameState : MonoBehaviour
 
     IEnumerator wait()
     {
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(5.0f);
     }
 
     public void ContinueGame()

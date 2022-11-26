@@ -33,7 +33,13 @@ public class FishSpotContrller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Gamestate = GameObject.Find("player").gameObject;
+        FishingControls = GameObject.Find("player").gameObject;
+       
+        PerfectZonecontroller = GameObject.Find("PerfectZone").gameObject;
+        GameObject.Find("PerfectZone").SetActive(false);
+
+
     }
 
     // Update is called once per frame

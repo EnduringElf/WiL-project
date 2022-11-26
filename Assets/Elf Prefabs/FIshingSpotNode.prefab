@@ -142,7 +142,7 @@ Transform:
   m_Children:
   - {fileID: 1775382383705806117}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1775382384506156179
 MonoBehaviour:
@@ -159,8 +159,8 @@ MonoBehaviour:
   Fishpool:
   - {fileID: 11400000, guid: 42dbda6df70382141931702f4abae296, type: 2}
   TimeLeft: 30
-  minusProgress: 0
-  Active: 1
+  minusProgress: 1
+  Active: 0
   Gamestate: {fileID: 0}
   FishingControls: {fileID: 0}
   PerfectZonecontroller: {fileID: 0}

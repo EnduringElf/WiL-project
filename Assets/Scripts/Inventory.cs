@@ -6,7 +6,8 @@ using TMPro;
 
 public class Inventory : MonoBehaviour
 {
-    public List<Fish> InventoryObjects;
+    public List<Fish> InventoryFish;
+    public List<Barrel> InventoryBarrels;
     public GameObject Inventoryui;
     private bool MenuOpen;
 

@@ -11,6 +11,7 @@ public class Inventory_Ui_manager : MonoBehaviour
     public GameObject TemplateObject;
     public GameObject TemplateObjectBackground;
     public List<Fish> inventoryitems;
+    public List<Barrel> barrels;
     public List<GameObject> inventory_objects;
     public float padding;
 
@@ -41,7 +42,7 @@ public class Inventory_Ui_manager : MonoBehaviour
         originWidth = (-backgroundWidth / 2) + (objecthieght / 2);
         originWidth += padding;
         WidthAmount =(int)(backgroundWidth / objectwidth);
-        inventoryitems = player.GetComponent<Inventory>().InventoryObjects;
+        inventoryitems = player.GetComponent<Inventory>().InventoryFish;
         //TemplateObject.GetComponent<RectTransform>().localPosition = new Vector3(originWidth, 410,0);
         DisplayInventory();
         
@@ -50,7 +51,7 @@ public class Inventory_Ui_manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        inventoryitems = player.GetComponent<Inventory>().InventoryObjects;
+        inventoryitems = player.GetComponent<Inventory>().InventoryFish;
     }
 
     public void DisplayInventory()
@@ -75,6 +76,25 @@ public class Inventory_Ui_manager : MonoBehaviour
             temp.GetComponent<TemplateObjectHolder>().Portrait.GetComponent<Image>().sprite = i.Portrait;
             temp.GetComponent<TemplateObjectHolder>().Name.GetComponent<TMP_Text>().text = i.Name;
             
+        }
+        foreach (Barrel i in barrels)
+        {
+            GameObject temp =
+            Instantiate(TemplateObject);
+            temp.transform.SetParent(Background.transform);
+            if (objects > WidthAmount - 2)
+            {
+                objects = 0;
+                hieght = originHieght - (objecthieght + padding);
+            }
+            temp.GetComponent<RectTransform>().localPosition
+            = new Vector3(originWidth + ((objectwidth + padding) * objects), hieght, 0);
+            inventory_objects.Add(temp);
+            objects++;
+
+            temp.GetComponent<TemplateObjectHolder>().Portrait.GetComponent<Image>().sprite = i.Portrait;
+            temp.GetComponent<TemplateObjectHolder>().Name.GetComponent<TMP_Text>().text = i.Name;
+
         }
     }
 
