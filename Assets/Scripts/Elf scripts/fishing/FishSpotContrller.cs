@@ -7,24 +7,12 @@ public class FishSpotContrller : MonoBehaviour
 
     public Fish[] Fishpool;
     public float TimeLeft;
-    public float minusProgress;
     public bool Active;
 
     public GameObject Gamestate;
     public GameObject FishingControls;
     public GameObject PerfectZonecontroller;
     public GameObject Triigger;
-
-    public int temp = 0;
-
-    public Fish GetrandomFish()
-    {
-        Fish t;
-        t = Fishpool[Random.Range(0, Fishpool.Length)];
-        t.GetFinalValue();
-        t.GetvariableWieght();
-        return t;
-    }
 
 
 
@@ -41,7 +29,7 @@ public class FishSpotContrller : MonoBehaviour
     {
         if (Active)
         {
-            TimeLeft -= minusProgress * Time.deltaTime;
+            TimeLeft -= Time.deltaTime;
         }
         if(TimeLeft < 0)
         {

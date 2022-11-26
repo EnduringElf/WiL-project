@@ -4,23 +4,11 @@ using UnityEngine;
 
 public class WorldFish : MonoBehaviour
 {
-    public FishPool[] FishPools;
-    public bool newGame;
-
-    public GameObject[] SpawnSpots;
-    
+    public Fish[] WorldPool;
 
     // Start is called before the first frame update
     void Start()
     {
-        
-        if (newGame == true)
-        {
-            for (int i = 0; i > SpawnSpots.Length;i++)
-            {
-                SpawnSpots[i].GetComponent<FishSpotContrller>().Fishpool = FishPools[Random.Range(0, FishPools.Length)].ArrayAllfish();
-            }
-        }
         
     }
 
