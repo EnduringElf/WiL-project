@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FishTemp1
   m_EditorClassIdentifier: 
   Name: temp
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 21300000, guid: 7ae826692cdcbef4fadb927338e90470, type: 3}
   BaseCurrency: 10
   Wieght: 1
   MAxRandomWieght: 5

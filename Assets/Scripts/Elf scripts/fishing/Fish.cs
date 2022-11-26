@@ -4,12 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "FishData", menuName = "Assets/Fish", order = 1)]
-public class Fish : ScriptableObject
+public class Fish : Item
 {
-    [Header("Name")]
-    public string Name;
-    [Header("Portrait")]
-    public Image Portrait;
+    
     [Header("Values")]
     public float BaseCurrency;
     public float Wieght;
@@ -25,8 +22,6 @@ public class Fish : ScriptableObject
         BaseCurrency = baseCurrency;
         Wieght = wieght;
     }
-
-    
 
     public float GetvariableWieght()
     {

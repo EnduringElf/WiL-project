@@ -42,6 +42,10 @@ public class GameState : MonoBehaviour
     void Start()
     {
         FishContrls = Player.GetComponent<FIshingControls>();
+        FishCaughtUi.SetActive(true);
+        FishPortrait = GameObject.Find("FishPortrait").GetComponent<Image>();
+        FishCaughtUi.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -75,13 +79,21 @@ public class GameState : MonoBehaviour
 
     public void CaughtFsih(Fish f)
     {
+        Player.GetComponent<Inventory>().InventoryObjects.Add(f);
         FishCaughtUi.SetActive(true);
+        FishPortrait.sprite = f.Portrait;
         FishName.text = f.Name;
         FishWieght.text ="Value: R" + f.FinalValue.ToString("n2");
         FishPrice.text = "Wieght:" + f.FinalWieght.ToString("n2") + "KG";
         f.valuescanChange = false;
+        StartCoroutine(wait());
         CanContinue = true;
 
+    }
+
+    IEnumerator wait()
+    {
+        yield return new WaitForSeconds(2.0f);
     }
 
     public void ContinueGame()
