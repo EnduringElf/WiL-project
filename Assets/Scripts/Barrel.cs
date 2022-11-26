@@ -10,10 +10,10 @@ public class Barrel : Item
     public float maxW;
     public Barrel()
     {
-        Oncreate();
+        
     }
     
-    void Oncreate()
+    public void Oncreate()
     {
         wieght = Random.Range(minW, maxW);
     }
