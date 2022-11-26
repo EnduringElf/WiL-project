@@ -9,9 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f30936f2e848c2c46abd61179790c6a3, type: 3}
-  m_Name: temp
+  m_Script: {fileID: 11500000, guid: 8e490c3ef594a3b4d809fb9b52a3d6ee, type: 3}
+  m_Name: Verlorenvlei Refin
   m_EditorClassIdentifier: 
-  Fish_Pool: []
-  rarePool: []
-  LegendaryPool: []
+  Name: Fish
+  Portrait: {fileID: 0}
+  BaseCurrency: 16
+  Wieght: 1
+  MAxRandomWieght: 150
+  FinalWieght: 0
+  FinalValue: 0
+  valuescanChange: 0
