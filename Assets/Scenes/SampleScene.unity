@@ -3029,7 +3029,7 @@ MonoBehaviour:
   playerValue: 0
   progress: 0
   progressValue: 0.2
-  MInusProgess: 0.1
+  MInusProgess: 0
   proegreeM: 100
   completionSlider: {fileID: 1773318367}
 --- !u!1 &554917946
@@ -6023,7 +6023,7 @@ MonoBehaviour:
   Fishpool:
   - {fileID: 11400000, guid: 42dbda6df70382141931702f4abae296, type: 2}
   TimeLeft: 30
-  minusProgress: 0.5
+  minusProgress: 0
   Active: 0
   Gamestate: {fileID: 1615405949}
   FishingControls: {fileID: 1246125962}
@@ -7107,7 +7107,7 @@ MonoBehaviour:
   ExitPrompt: {fileID: 1316787571}
   FishGameUi: {fileID: 554909655}
   PerfectZoneControls: {fileID: 554909655}
-  ZoneController: {fileID: 0}
+  ZoneController: {fileID: 554909655}
   Player: {fileID: 1246125962}
   FishCaughtUi: {fileID: 1046222540}
   FishPortrait: {fileID: 919029980}
