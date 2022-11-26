@@ -71,6 +71,7 @@ public class Inventory_Ui_manager : MonoBehaviour
             = new Vector3(originWidth + ((objectwidth+padding) * objects), hieght, 0);
             inventory_objects.Add(temp);
             objects++;
+            
             temp.GetComponent<TemplateObjectHolder>().Portrait.GetComponent<Image>().sprite = i.Portrait;
             temp.GetComponent<TemplateObjectHolder>().Name.GetComponent<TMP_Text>().text = i.Name;
             
