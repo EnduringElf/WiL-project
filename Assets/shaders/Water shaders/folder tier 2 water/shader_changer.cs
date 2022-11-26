@@ -68,7 +68,7 @@ public class shader_changer : MonoBehaviour
             aplha += ChangeSpeed * Time.deltaTime;
         }
 
-        WaterTier2.SetFloat("_Alpha", aplha);
+        //WaterTier2.SetFloat("_Alpha", aplha);
 
 
 

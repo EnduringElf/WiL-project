@@ -55,7 +55,7 @@ Material:
     - _CullMode: 2
     - _CullModeForward: 2
     - _DepthOffsetEnable: 0
-    - _Depth_Fade_Distance: 0
+    - _Depth_Fade_Distance: 23
     - _DoubleSidedEnable: 0
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 2
@@ -64,7 +64,7 @@ Material:
     - _EnableFogOnTransparent: 1
     - _Foam_Amount: 9.96
     - _Foam_Cutoff: 1
-    - _Foam_Scale: 1
+    - _Foam_Scale: 0.81
     - _Foam_power: 1
     - _Gloss: 0
     - _Metalic: 0
@@ -72,7 +72,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: -50
     - _Refraction_Scale: 103.26
-    - _Refraction_speed: 0
+    - _Refraction_speed: 1.2
     - _RenderQueueType: 4
     - _SrcBlend: 1
     - _StencilRef: 0
@@ -94,7 +94,7 @@ Material:
     - _TransparentWritingMotionVec: 0
     - _TransparentZWrite: 0
     - _UseShadowThreshold: 0
-    - _Voronoi_speed: 3
+    - _Voronoi_speed: 6.1
     - _Water_Speed: 0
     - _Water_noise_Scale: 0
     - _Wave_Size: 1
@@ -102,17 +102,17 @@ Material:
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
     - _ZWrite: 0
-    - _cell_power: 12
+    - _cell_power: 5.84
     - _foam_speed: 1
-    - _refraxtion_strength: 0
-    - _voronoi_scale: 121.86
+    - _refraxtion_strength: 0.01298
+    - _voronoi_scale: -54.11
     m_Colors:
-    - _Base_Color: {r: 0, g: 0.83679795, b: 1, a: 1}
-    - _Deep_Color: {r: 0, g: 0, b: 0, a: 1}
+    - _Base_Color: {r: 0, g: 0.83529425, b: 1, a: 1}
+    - _Deep_Color: {r: 0.0754717, g: 0.0754717, b: 0.0754717, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _foam_color: {r: 0.6604218, g: 0.9150943, b: 0.8998352, a: 1}
-    - _secondary_color: {r: 0, g: 1, b: 0.956378, a: 0}
+    - _secondary_color: {r: 0.72238064, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &2247906528065326452
 MonoBehaviour:

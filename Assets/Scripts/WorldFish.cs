@@ -13,7 +13,7 @@ public class WorldFish : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        SpawnSpots = GameObject.FindGameObjectsWithTag("Fishing Spot");
         if (newGame == true)
         {
             for (int i = 0; i > SpawnSpots.Length;i++)

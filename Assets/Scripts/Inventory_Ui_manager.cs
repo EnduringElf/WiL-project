@@ -43,6 +43,7 @@ public class Inventory_Ui_manager : MonoBehaviour
         originWidth += padding;
         WidthAmount =(int)(backgroundWidth / objectwidth);
         inventoryitems = player.GetComponent<Inventory>().InventoryFish;
+        barrels = player.GetComponent<Inventory>().InventoryBarrels;
         //TemplateObject.GetComponent<RectTransform>().localPosition = new Vector3(originWidth, 410,0);
         DisplayInventory();
         
@@ -52,6 +53,7 @@ public class Inventory_Ui_manager : MonoBehaviour
     void Update()
     {
         inventoryitems = player.GetComponent<Inventory>().InventoryFish;
+        barrels = player.GetComponent<Inventory>().InventoryBarrels;
     }
 
     public void DisplayInventory()
