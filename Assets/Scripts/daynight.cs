@@ -1,14 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-
-[ExecuteAlways]
 public class daynight : MonoBehaviour
 {
     [SerializeField] private Light DirectionalLight;
     [SerializeField] private lightingpresets presets;
-    [SerializeField, Range(0,900)] private float TimeOfDay;
+    [SerializeField, Range(0, 900)] private float TimeOfDay;
+   
+    //spawn spots
+ 
+    GameObject a;
+    GameObject b;
+    GameObject c;
+    GameObject d;
+    GameObject e;
+    GameObject f;
+    GameObject g;
+  
+    GameObject h;
+  public  GameObject daynightPreserve;
+    GameObject i;
+    public GameObject DarkFishWater;
+    public bool IsFIshing = false;
+  
 
     private void UpdateLighting(float timepercent)
 
@@ -55,12 +71,62 @@ public class daynight : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TimeOfDay = 200;
+        
+
+
+        TimeOfDay = 215;
+        a = GameObject.Find("FishingSpotSpawner");
+        b = GameObject.Find("FishingSpotSpawner (1)");
+        c = GameObject.Find("FishingSpotSpawner (2)");
+        d = GameObject.Find("FishingSpotSpawner (3)");
+        e = GameObject.Find("FishingSpotSpawner (4)");
+        f = GameObject.Find("FishingSpotSpawner (5)");
+        g = GameObject.Find("FishingSpotSpawner (6)");
+        h = GameObject.Find("FishingSpotSpawner (7)");
+        i = GameObject.Find("FishingSpotSpawner (8)");
+
+        Instantiate(DarkFishWater, a.transform.position, Quaternion.identity);
+
+        float randomNumber = Random.Range(1, 4);
+      
+
+      
+
+
+        if (randomNumber == 1)
+
+        {
+            Instantiate(DarkFishWater, a.transform.position, Quaternion.identity);
+            Instantiate(DarkFishWater, e.transform.position, Quaternion.identity);
+            Instantiate(DarkFishWater, g.transform.position, Quaternion.identity);
+        }
+        else if (randomNumber == 2)
+        {
+            Instantiate(DarkFishWater, b.transform.position, Quaternion.identity);
+            Instantiate(DarkFishWater, i.transform.position, Quaternion.identity);
+            Instantiate(DarkFishWater, d.transform.position, Quaternion.identity);
+        }
+        else if (randomNumber == 3)
+        {
+            Instantiate(DarkFishWater, c.transform.position, Quaternion.identity);
+            Instantiate(DarkFishWater, h.transform.position, Quaternion.identity);
+            Instantiate(DarkFishWater, f.transform.position, Quaternion.identity);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        DontDestroyOnLoad(daynightPreserve);
+        if (Input.GetKeyDown(KeyCode.L))
+
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+
+            Debug.Log("L pressed");
+         
+        }
         if (presets == null)
 
         {
@@ -76,22 +142,25 @@ public class daynight : MonoBehaviour
             UpdateLighting(TimeOfDay / 900f);          // here
         }
 
-        
+
         else
         {
             UpdateLighting(TimeOfDay / 900f);
         }
 
-        if (TimeOfDay > 700)                        // turns light off at night
+        if (TimeOfDay > 46)                        // turns light off at night
 
         {
             DirectionalLight.intensity = 0f;
         }
 
-        //if (TimeOfDay < 500)               //turns light back on at dawn
+        if (TimeOfDay < 700)               //turns light back on at dawn
 
-        //{
-        //    DirectionalLight.intensity = 0.7f;
-        //}
+        {
+            DirectionalLight.intensity = 0.7f;
+        }
     }
+
+   
 }
+
