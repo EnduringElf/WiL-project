@@ -47,6 +47,11 @@ public class test : MonoBehaviour
     void FixedUpdate()
     {
         float diff = transform.position.y - waterHieght;
+        if(transform.position.y/2 > waterHieght+2)
+        {
+            diff = waterHieght + 2;
+            switchState(true);
+        }
 
         if (diff < waterHieght)
         {

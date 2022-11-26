@@ -68,7 +68,7 @@ Material:
     - _CullMode: 2
     - _CullModeForward: 2
     - _DepthOffsetEnable: 0
-    - _Distance: 0
+    - _Distance: -0.03
     - _Distortion: 5
     - _DoubleSidedEnable: 0
     - _DoubleSidedGIMode: 0
@@ -89,7 +89,7 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
-    - _Ripple_amount: 38.6
+    - _Ripple_amount: 209.9
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 8
@@ -116,12 +116,14 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     - _alpha: 1
-    - _cell_power: 4.85
+    - _cell_power: 37.5
+    - _edge_power: 1
+    - _emissive: 0.1
     - _fernell_effect_power: 0
     - _foam_offset: 0
     - _foam_power: 3
     m_Colors:
-    - _Base_colour: {r: 0, g: 0.7479334, b: 1, a: 0.4039216}
+    - _Base_colour: {r: 0, g: 0, b: 0, a: 0.4039216}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _Foam_colour: {r: 2.007843, g: 4, b: 3.333019, a: 0}

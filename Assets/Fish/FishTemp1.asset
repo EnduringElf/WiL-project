@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e490c3ef594a3b4d809fb9b52a3d6ee, type: 3}
   m_Name: FishTemp1
   m_EditorClassIdentifier: 
-  Name: 
-  BaseCurrency: 0
-  Wieght: 0
-  RandomWieght: 0
-  FinalValue: 0
+  Name: temp
+  Portrait: {fileID: 21300000, guid: 7ae826692cdcbef4fadb927338e90470, type: 3}
+  BaseCurrency: 10
+  Wieght: 1
+  MAxRandomWieght: 5
+  FinalWieght: 1.17
+  FinalValue: 37.8
+  valuescanChange: 0
