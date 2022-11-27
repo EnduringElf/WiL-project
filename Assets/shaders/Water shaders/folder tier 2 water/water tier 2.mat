@@ -44,7 +44,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AddPrecomputedVelocity: 0
-    - _Alpha: 0.5
+    - _Alpha: 1
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 10
     - _AlphaSrcBlend: 1
@@ -62,9 +62,9 @@ Material:
     - _DstBlend: 10
     - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
-    - _Foam_Amount: 53
+    - _Foam_Amount: 33.96
     - _Foam_Cutoff: 4.1
-    - _Foam_Scale: 294.4
+    - _Foam_Scale: 293.32
     - _Foam_power: 7.72
     - _Gloss: 0.888
     - _Metalic: 0
@@ -102,18 +102,18 @@ Material:
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
     - _ZWrite: 0
-    - _cell_power: 9.45
+    - _cell_power: 12
     - _foam_speed: 0.3
     - _refraxtion_strength: 0.03
     - _voronoi_scale: 1593.42
     m_Colors:
-    - _Base_Color: {r: 0.03137255, g: 0.3137255, b: 0.48235294, a: 0}
+    - _Base_Color: {r: 5.280743e-13, g: 0.4590004, b: 0.99999595, a: 0.9999987}
     - _Base_Colour: {r: 0.09131365, g: 0.7107891, b: 0.7169812, a: 1}
-    - _Deep_Color: {r: 0.015686275, g: 0.015686275, b: 0.09411765, a: 0}
+    - _Deep_Color: {r: 4.765182e-13, g: 0.8117634, b: 0.7725477, a: 7.964965e-24}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _foam_color: {r: 1, g: 1, b: 1, a: 1}
-    - _secondary_color: {r: 0, g: 1, b: 0.66267204, a: 0}
+    - _foam_color: {r: 45.254833, g: 45.254833, b: 45.254833, a: 1}
+    - _secondary_color: {r: 0.46666133, g: 0.8745111, b: 0.9254889, a: 7.964965e-24}
   m_BuildTextureStacks: []
 --- !u!114 &2840052303749876543
 MonoBehaviour:
