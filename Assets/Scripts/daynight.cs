@@ -20,10 +20,10 @@ public class daynight : MonoBehaviour
     GameObject g;
   
     GameObject h;
-  public  GameObject daynightPreserve;
+  //public  GameObject daynightPreserve;
     GameObject i;
-    public GameObject DarkFishWater;
-    public bool IsFIshing = false;
+    //public GameObject DarkFishWater;
+    //public bool IsFIshing = false;
   
 
     private void UpdateLighting(float timepercent)
@@ -85,7 +85,7 @@ public class daynight : MonoBehaviour
         h = GameObject.Find("FishingSpotSpawner (7)");
         i = GameObject.Find("FishingSpotSpawner (8)");
 
-        Instantiate(DarkFishWater, a.transform.position, Quaternion.identity);
+        //Instantiate(DarkFishWater, a.transform.position, Quaternion.identity);
 
         float randomNumber = Random.Range(1, 4);
       
@@ -93,32 +93,32 @@ public class daynight : MonoBehaviour
       
 
 
-        if (randomNumber == 1)
+        //if (randomNumber == 1)
 
-        {
-            Instantiate(DarkFishWater, a.transform.position, Quaternion.identity);
-            Instantiate(DarkFishWater, e.transform.position, Quaternion.identity);
-            Instantiate(DarkFishWater, g.transform.position, Quaternion.identity);
-        }
-        else if (randomNumber == 2)
-        {
-            Instantiate(DarkFishWater, b.transform.position, Quaternion.identity);
-            Instantiate(DarkFishWater, i.transform.position, Quaternion.identity);
-            Instantiate(DarkFishWater, d.transform.position, Quaternion.identity);
-        }
-        else if (randomNumber == 3)
-        {
-            Instantiate(DarkFishWater, c.transform.position, Quaternion.identity);
-            Instantiate(DarkFishWater, h.transform.position, Quaternion.identity);
-            Instantiate(DarkFishWater, f.transform.position, Quaternion.identity);
-        }
+        //{
+        //    Instantiate(DarkFishWater, a.transform.position, Quaternion.identity);
+        //    Instantiate(DarkFishWater, e.transform.position, Quaternion.identity);
+        //    Instantiate(DarkFishWater, g.transform.position, Quaternion.identity);
+        //}
+        //else if (randomNumber == 2)
+        //{
+        //    Instantiate(DarkFishWater, b.transform.position, Quaternion.identity);
+        //    Instantiate(DarkFishWater, i.transform.position, Quaternion.identity);
+        //    Instantiate(DarkFishWater, d.transform.position, Quaternion.identity);
+        //}
+        //else if (randomNumber == 3)
+        //{
+        //    Instantiate(DarkFishWater, c.transform.position, Quaternion.identity);
+        //    Instantiate(DarkFishWater, h.transform.position, Quaternion.identity);
+        //    Instantiate(DarkFishWater, f.transform.position, Quaternion.identity);
+        //}
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        DontDestroyOnLoad(daynightPreserve);
+        //DontDestroyOnLoad(daynightPreserve);
         if (Input.GetKeyDown(KeyCode.L))
 
         {
