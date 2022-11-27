@@ -134,6 +134,7 @@ public class evilShipMovment : MonoBehaviour
             yield return new WaitForSeconds(5);  //5
 
             dest1();
+          
 
             yield return new WaitForSeconds(60); //40
 
