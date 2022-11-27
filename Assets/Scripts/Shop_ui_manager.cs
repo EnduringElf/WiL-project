@@ -17,7 +17,8 @@ public class Shop_ui_manager : MonoBehaviour
     public float objecthieght;
     public int WidthAmount;
     public float originWidth;
-    public float originHieght = 410;
+    public float originHieght = 33.8f;
+    public int max_objects_per_page = 5;
 
 
 
@@ -29,6 +30,7 @@ public class Shop_ui_manager : MonoBehaviour
         objectwidth = TemplateObjectBackground.GetComponent<RectTransform>().rect.width + 5;
         objecthieght = TemplateObjectBackground.GetComponent<RectTransform>().rect.height + 5;
         fish = player.GetComponent<Inventory>().InventoryFish;
+
     }
 
     // Update is called once per frame
@@ -36,6 +38,21 @@ public class Shop_ui_manager : MonoBehaviour
     {
         
     }
+
+    public void DisplayPage(int listinterval)
+    {
+        float hieght = originHieght;
+
+        for(int i = 0; i < max_objects_per_page; i++)
+        {
+            
+        }
+
+
+    }
+
+    
+
 
 
 
