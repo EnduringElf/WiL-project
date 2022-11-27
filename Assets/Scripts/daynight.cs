@@ -24,6 +24,11 @@ public class daynight : MonoBehaviour
     GameObject i;
     //public GameObject DarkFishWater;
     //public bool IsFIshing = false;
+
+    public bool morning;
+    public bool midday;
+    public bool afternoon;
+    public bool night;
   
 
     private void UpdateLighting(float timepercent)
@@ -71,8 +76,8 @@ public class daynight : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
 
+        morning = true;
 
         TimeOfDay = 215;
         a = GameObject.Find("FishingSpotSpawner");
@@ -117,7 +122,7 @@ public class daynight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
         //DontDestroyOnLoad(daynightPreserve);
         if (Input.GetKeyDown(KeyCode.L))
 
@@ -159,8 +164,65 @@ public class daynight : MonoBehaviour
         {
             DirectionalLight.intensity = 0.7f;
         }
+
+        ReportTimeOfDay();
     }
 
+
+
+    public void ReportTimeOfDay()
+
+    {
+        if (TimeOfDay >= 200 )
+
+        {
+            night = false;
+            afternoon = false;
+            morning = true;
+            midday = false;
+            
+
+            
+        }
+
+        if (TimeOfDay >= 500)
+
+        {
+            morning = false;
+            night = false;
+            midday = true;
+
+            
+
+        }
+
+        if (TimeOfDay >= 620)
+
+        {
+            morning = false;
+            night = false;
+            afternoon = true;
+            midday = false;
+
+           
+
+        }
+        if (TimeOfDay >= 740)
+
+        {
+
+            afternoon = false;
+            
+            night = true;
+            midday = false;
+            morning = false;
+            
+         
+        }
+
+
+
+    }
    
 }
 
