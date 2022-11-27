@@ -72,7 +72,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: -50
     - _Refraction_Scale: 103.26
-    - _Refraction_speed: 1.2
+    - _Refraction_speed: 2
     - _RenderQueueType: 4
     - _SrcBlend: 1
     - _StencilRef: 0
@@ -102,17 +102,17 @@ Material:
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
     - _ZWrite: 0
-    - _cell_power: 5.84
+    - _cell_power: 12
     - _foam_speed: 1
-    - _refraxtion_strength: 0.01298
+    - _refraxtion_strength: 0.03
     - _voronoi_scale: -54.11
     m_Colors:
-    - _Base_Color: {r: 0, g: 0.83529425, b: 1, a: 1}
-    - _Deep_Color: {r: 0.0754717, g: 0.0754717, b: 0.0754717, a: 1}
+    - _Base_Color: {r: 0, g: 0, b: 0, a: 1}
+    - _Deep_Color: {r: 0, g: 0, b: 0, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _foam_color: {r: 0.6604218, g: 0.9150943, b: 0.8998352, a: 1}
-    - _secondary_color: {r: 0.72238064, g: 1, b: 0, a: 1}
+    - _secondary_color: {r: 0.05406728, g: 0.764151, b: 0.7304441, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &2247906528065326452
 MonoBehaviour:

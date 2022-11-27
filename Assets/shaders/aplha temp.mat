@@ -60,6 +60,7 @@ Material:
     - _DstBlend: 0
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
+    - _LOA: -57.4
     - _OpaqueCullMode: 2
     - _QueueControl: 0
     - _QueueOffset: 3
