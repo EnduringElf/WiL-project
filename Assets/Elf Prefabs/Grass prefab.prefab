@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9059877109009648143}
   - component: {fileID: 3223756652993368701}
   m_Layer: 0
-  m_Name: Grass 1
+  m_Name: Grass prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
