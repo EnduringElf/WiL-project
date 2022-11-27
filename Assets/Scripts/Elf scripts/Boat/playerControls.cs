@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class playerControls : MonoBehaviour
 {
+    public GameObject GameManager;
+
     Rigidbody rb;
     public float fowardthrust = 20f;
     public float turningspeed = 10f;

@@ -20,10 +20,15 @@ public class daynight : MonoBehaviour
     GameObject g;
   
     GameObject h;
-  public  GameObject daynightPreserve;
+  //public  GameObject daynightPreserve;
     GameObject i;
-    public GameObject DarkFishWater;
-    public bool IsFIshing = false;
+    //public GameObject DarkFishWater;
+    //public bool IsFIshing = false;
+
+    public bool morning;
+    public bool midday;
+    public bool afternoon;
+    public bool night;
   
 
     private void UpdateLighting(float timepercent)
@@ -71,8 +76,8 @@ public class daynight : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
 
+        morning = true;
 
         TimeOfDay = 215;
         a = GameObject.Find("FishingSpotSpawner");
@@ -85,7 +90,7 @@ public class daynight : MonoBehaviour
         h = GameObject.Find("FishingSpotSpawner (7)");
         i = GameObject.Find("FishingSpotSpawner (8)");
 
-        Instantiate(DarkFishWater, a.transform.position, Quaternion.identity);
+        //Instantiate(DarkFishWater, a.transform.position, Quaternion.identity);
 
         float randomNumber = Random.Range(1, 4);
       
@@ -93,32 +98,32 @@ public class daynight : MonoBehaviour
       
 
 
-        if (randomNumber == 1)
+        //if (randomNumber == 1)
 
-        {
-            Instantiate(DarkFishWater, a.transform.position, Quaternion.identity);
-            Instantiate(DarkFishWater, e.transform.position, Quaternion.identity);
-            Instantiate(DarkFishWater, g.transform.position, Quaternion.identity);
-        }
-        else if (randomNumber == 2)
-        {
-            Instantiate(DarkFishWater, b.transform.position, Quaternion.identity);
-            Instantiate(DarkFishWater, i.transform.position, Quaternion.identity);
-            Instantiate(DarkFishWater, d.transform.position, Quaternion.identity);
-        }
-        else if (randomNumber == 3)
-        {
-            Instantiate(DarkFishWater, c.transform.position, Quaternion.identity);
-            Instantiate(DarkFishWater, h.transform.position, Quaternion.identity);
-            Instantiate(DarkFishWater, f.transform.position, Quaternion.identity);
-        }
+        //{
+        //    Instantiate(DarkFishWater, a.transform.position, Quaternion.identity);
+        //    Instantiate(DarkFishWater, e.transform.position, Quaternion.identity);
+        //    Instantiate(DarkFishWater, g.transform.position, Quaternion.identity);
+        //}
+        //else if (randomNumber == 2)
+        //{
+        //    Instantiate(DarkFishWater, b.transform.position, Quaternion.identity);
+        //    Instantiate(DarkFishWater, i.transform.position, Quaternion.identity);
+        //    Instantiate(DarkFishWater, d.transform.position, Quaternion.identity);
+        //}
+        //else if (randomNumber == 3)
+        //{
+        //    Instantiate(DarkFishWater, c.transform.position, Quaternion.identity);
+        //    Instantiate(DarkFishWater, h.transform.position, Quaternion.identity);
+        //    Instantiate(DarkFishWater, f.transform.position, Quaternion.identity);
+        //}
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        DontDestroyOnLoad(daynightPreserve);
+        
+        //DontDestroyOnLoad(daynightPreserve);
         if (Input.GetKeyDown(KeyCode.L))
 
         {
@@ -159,8 +164,65 @@ public class daynight : MonoBehaviour
         {
             DirectionalLight.intensity = 0.7f;
         }
+
+        ReportTimeOfDay();
     }
 
+
+
+    public void ReportTimeOfDay()
+
+    {
+        if (TimeOfDay >= 200 )
+
+        {
+            night = false;
+            afternoon = false;
+            morning = true;
+            midday = false;
+            
+
+            
+        }
+
+        if (TimeOfDay >= 500)
+
+        {
+            morning = false;
+            night = false;
+            midday = true;
+
+            
+
+        }
+
+        if (TimeOfDay >= 620)
+
+        {
+            morning = false;
+            night = false;
+            afternoon = true;
+            midday = false;
+
+           
+
+        }
+        if (TimeOfDay >= 740)
+
+        {
+
+            afternoon = false;
+            
+            night = true;
+            midday = false;
+            morning = false;
+            
+         
+        }
+
+
+
+    }
    
 }
 
