@@ -107,13 +107,13 @@ Material:
     - _refraxtion_strength: 0.03
     - _voronoi_scale: 1593.42
     m_Colors:
-    - _Base_Color: {r: 5.280743e-13, g: 0.4590004, b: 0.99999595, a: 0.9999987}
+    - _Base_Color: {r: 2.3123012e-25, g: 0.4589998, b: 0.9999998, a: 0.99999994}
     - _Base_Colour: {r: 0.09131365, g: 0.7107891, b: 0.7169812, a: 1}
-    - _Deep_Color: {r: 4.765182e-13, g: 0.8117634, b: 0.7725477, a: 7.964965e-24}
+    - _Deep_Color: {r: 2.0865504e-25, g: 0.81176466, b: 0.772549, a: 3.487653e-36}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _foam_color: {r: 45.254833, g: 45.254833, b: 45.254833, a: 1}
-    - _secondary_color: {r: 0.46666133, g: 0.8745111, b: 0.9254889, a: 7.964965e-24}
+    - _secondary_color: {r: 0.4666664, g: 0.8745099, b: 0.92549014, a: 3.487653e-36}
   m_BuildTextureStacks: []
 --- !u!114 &2840052303749876543
 MonoBehaviour:
