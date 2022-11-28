@@ -9,6 +9,8 @@ public class daynight : MonoBehaviour
     [SerializeField] private lightingpresets presets;
     [SerializeField, Range(0, 900)] private float TimeOfDay;
 
+    public GameObject obj;
+
     
     //spawn spots
  
@@ -141,7 +143,10 @@ public class daynight : MonoBehaviour
             return;
 
         }
-
+        if (TimeOfDay == 890)
+        {
+            obj.GetComponent<Objective>().day++;
+        }
         if (Application.isPlaying)
 
         {
@@ -155,7 +160,6 @@ public class daynight : MonoBehaviour
         {
             UpdateLighting(TimeOfDay / 900f);
         }
-
         if (TimeOfDay > 46)                        // turns light off at night
 
         {
@@ -163,10 +167,11 @@ public class daynight : MonoBehaviour
         }
 
         if (TimeOfDay < 700)               //turns light back on at dawn
-
         {
             DirectionalLight.intensity = 0.7f;
         }
+        
+        
 
         ReportTimeOfDay();
     }
