@@ -15,6 +15,7 @@ public class Objective : MonoBehaviour
     public GameObject daydept;
 
     public GameObject pauseUi;
+    public GameObject pauseText;
     bool pause = false;
 
     private void Update()
@@ -37,7 +38,7 @@ public class Objective : MonoBehaviour
 
     public void updatedebt()
     {
-        if (DaysDebt! > 0)
+        if (DaysDebt < 0)
         {
             GameOver();
         }
@@ -45,6 +46,7 @@ public class Objective : MonoBehaviour
         {
             day++;
             currentDebt += DaysDebt;
+            DaysDebt = -day * 200;
         }
     }
 
@@ -55,7 +57,9 @@ public class Objective : MonoBehaviour
 
     public void GameOver()
     {
-
+        pauseUi.SetActive(true);
+        pauseText.GetComponent<TMP_Text>().text = "Game Over";
+        Time.timeScale = 0f;
     }
 
     public void Pause()

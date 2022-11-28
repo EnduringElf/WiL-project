@@ -15,6 +15,10 @@ public class daynight : MonoBehaviour
     public bool midday;
     public bool afternoon;
     public bool night;
+
+    public bool isdayUpdated;
+
+    public float speedofDay;
   
 
     private void UpdateLighting(float timepercent)
@@ -92,11 +96,10 @@ public class daynight : MonoBehaviour
         if (Application.isPlaying)
 
         {
-            TimeOfDay += Time.deltaTime;
+            TimeOfDay += speedofDay * Time.deltaTime;
             TimeOfDay %= 900;                          // add time to day night cycle here and
             UpdateLighting(TimeOfDay / 900f);          // here
         }
-
 
         else
         {
@@ -105,7 +108,7 @@ public class daynight : MonoBehaviour
         if (TimeOfDay > 46)                        // turns light off at night
 
         {
-            DirectionalLight.intensity = 0f;
+            DirectionalLight.intensity = 0.1f;
         }
 
         if (TimeOfDay < 700)               //turns light back on at dawn
@@ -113,8 +116,6 @@ public class daynight : MonoBehaviour
             DirectionalLight.intensity = 0.7f;
         }
         
-        
-
         ReportTimeOfDay();
     }
 
@@ -123,6 +124,8 @@ public class daynight : MonoBehaviour
     public void ReportTimeOfDay()
 
     {
+
+
         if (TimeOfDay >= 200 )
 
         {
@@ -130,6 +133,7 @@ public class daynight : MonoBehaviour
             afternoon = false;
             morning = true;
             midday = false;
+            
             
 
             
@@ -166,6 +170,16 @@ public class daynight : MonoBehaviour
             morning = false;
             
          
+        }
+
+        if(TimeOfDay >= 890.9 && isdayUpdated == false)
+        {
+            isdayUpdated = true;
+            obj.GetComponent<Objective>().updatedebt();
+        }
+        else if(TimeOfDay <= 100 && isdayUpdated == true)
+        {
+            isdayUpdated = false;
         }
 
 

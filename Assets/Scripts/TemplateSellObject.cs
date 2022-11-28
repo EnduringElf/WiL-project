@@ -41,9 +41,10 @@ public class TemplateSellObject : MonoBehaviour
             GameObject.Find("player").GetComponent<Inventory>().InventoryFish.Remove(thisFish);
             GameObject.Find("ShopUi").GetComponent<Shop_ui_manager>().fish.Capacity--;
         }
+        obj.GetComponent<Objective>().DaysDebt += thisFish.FinalValue;
         GameObject.Find("ShopUi").GetComponent<Shop_ui_manager>().destroyPage();
         GameObject.Find("ShopUi").GetComponent<Shop_ui_manager>().DisplayPage(0);
-        obj.GetComponent<Objective>().DaysDebt += thisFish.FinalValue;
+        //obj.GetComponent<Objective>().DaysDebt += thisFish.FinalValue;
         Destroy(this.gameObject);
         //return thisFish.FinalValue;
     }

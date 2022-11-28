@@ -40,8 +40,9 @@ public class Fish : Item
         if (valuescanChange == true)
         {
             FinalValue = BaseCurrency * GetvariableWieght();
-            FinalValue = (float)Mathf.Round(FinalValue * 100f) / 100f;
-            return FinalValue * 100;
+            FinalWieght = FinalValue * 50;
+            FinalValue = (float)Mathf.Round(FinalValue * 100f) / 10f;
+            return FinalValue;
         }
         return FinalValue;
            
