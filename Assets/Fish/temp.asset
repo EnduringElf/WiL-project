@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f30936f2e848c2c46abd61179790c6a3, type: 3}
   m_Name: temp
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream:Assets/Fish/temp.asset
   Fish_Pool: []
+=======
+  Fish_Pool:
+  - {fileID: 11400000, guid: e9c52b6289020b84a873cc45ea4d8f07, type: 2}
+>>>>>>> Stashed changes:Assets/Fish/Allfish.asset
   rarePool: []
   LegendaryPool: []
