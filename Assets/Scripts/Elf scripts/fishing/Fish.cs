@@ -41,7 +41,7 @@ public class Fish : Item
         {
             FinalValue = BaseCurrency * GetvariableWieght();
             FinalValue = (float)Mathf.Round(FinalValue * 100f) / 100f;
-            return FinalValue;
+            return FinalValue * 100;
         }
         return FinalValue;
            

@@ -20,15 +20,24 @@ public class WorldFish : MonoBehaviour
             //Debug.Log("spawning fishing spots at " + i.transform.position);
             Instantiate(FishingSpotSpawn, i.transform);
         }
-        GameObject.Find("PerfectZone").SetActive(false);
+        
         if (newGame == true)
         {
-            for (int i = 0; i > SpawnSpots.Length;i++)
+            for (int i = 0; i < SpawnSpots.Length;i++)
             {
-                SpawnSpots[i].GetComponent<FishSpotContrller>().Fishpool = FishPools[Random.Range(0, FishPools.Length)].ArrayAllfish();
+                if(FishPools[Random.Range(0, FishPools.Length)] != null)
+                {
+                    SpawnSpots[i].GetComponentInChildren<FishSpotContrller>().Fishpool =
+                        FishPools[0].Fish_Pool;
+                }
+                else
+                {
+                    i--;
+                }
+                
             }
         }
-        
+        GameObject.Find("PerfectZone").SetActive(false);
     }
 
     // Update is called once per frame
