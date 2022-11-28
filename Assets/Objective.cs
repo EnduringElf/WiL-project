@@ -17,8 +17,8 @@ public class Objective : MonoBehaviour
     private void Update()
     {
         dept.GetComponent<TMP_Text>().text = day.ToString();
-        currentdept.GetComponent<TMP_Text>().text = "R " + currentDebt.ToString();
-        daydept.GetComponent<TMP_Text>().text = "R " + DaysDebt.ToString();
+        currentdept.GetComponent<TMP_Text>().text = "Curtrent Debt: R " + currentDebt.ToString();
+        daydept.GetComponent<TMP_Text>().text = "Todays debt: R " + DaysDebt.ToString();
     }
 
 }
