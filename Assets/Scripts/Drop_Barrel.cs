@@ -6,6 +6,7 @@ public class Drop_Barrel : MonoBehaviour
 {
     public GameObject drop_off_point;
     public GameObject Object_to_drop;
+    public GameObject obj;
 
     public int amountDropped;
 
@@ -18,6 +19,8 @@ public class Drop_Barrel : MonoBehaviour
     }
     public void Drop_barrel()
     {
+        amountDropped++;
+        obj.GetComponent<Objective>().DaysDebt += 1000;
         GameObject temp =
         Instantiate(Object_to_drop);
         temp.transform.position = drop_off_point.transform.position;

@@ -14,12 +14,24 @@ public class Objective : MonoBehaviour
     public GameObject currentdept;
     public GameObject daydept;
 
+    public GameObject pauseUi;
+    bool pause = false;
+
     private void Update()
     {
         dept.GetComponent<TMP_Text>().text = day.ToString();
         currentdept.GetComponent<TMP_Text>().text = "Debt:R " + currentDebt.ToString();
         daydept.GetComponent<TMP_Text>().text = "Today:R " + DaysDebt.ToString();
-
+        if (Input.GetKeyDown(KeyCode.P) && pause == false)
+        {
+            pauseUi.SetActive(true);
+            pause = true;
+        }
+        else if(Input.GetKeyDown(KeyCode.P) && pause == true)
+        {
+            pauseUi.SetActive(false);
+            pause = false;
+        }
         
     }
 
