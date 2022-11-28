@@ -11,23 +11,6 @@ public class daynight : MonoBehaviour
 
     public GameObject obj;
 
-    
-    //spawn spots
- 
-    GameObject a;
-    GameObject b;
-    GameObject c;
-    GameObject d;
-    GameObject e;
-    GameObject f;
-    GameObject g;
-  
-    GameObject h;
-  //public  GameObject daynightPreserve;
-    GameObject i;
-    //public GameObject DarkFishWater;
-    //public bool IsFIshing = false;
-
     public bool morning;
     public bool midday;
     public bool afternoon;
@@ -77,51 +60,11 @@ public class daynight : MonoBehaviour
     }
     // Start is called before the first frame update
     void Start()
-    {
+    { 
 
         morning = true;
-
-
-
         TimeOfDay = 215;
-
-        //a = GameObject.Find("FishingSpotSpawner");
-        //b = GameObject.Find("FishingSpotSpawner (1)");
-        //c = GameObject.Find("FishingSpotSpawner (2)");
-        //d = GameObject.Find("FishingSpotSpawner (3)");
-        //e = GameObject.Find("FishingSpotSpawner (4)");
-        //f = GameObject.Find("FishingSpotSpawner (5)");
-        //g = GameObject.Find("FishingSpotSpawner (6)");
-        //h = GameObject.Find("FishingSpotSpawner (7)");
-        //i = GameObject.Find("FishingSpotSpawner (8)");
-
-        //Instantiate(DarkFishWater, a.transform.position, Quaternion.identity);
-
-        float randomNumber = Random.Range(1, 4);
       
-
-      
-
-
-        //if (randomNumber == 1)
-
-        //{
-        //    Instantiate(DarkFishWater, a.transform.position, Quaternion.identity);
-        //    Instantiate(DarkFishWater, e.transform.position, Quaternion.identity);
-        //    Instantiate(DarkFishWater, g.transform.position, Quaternion.identity);
-        //}
-        //else if (randomNumber == 2)
-        //{
-        //    Instantiate(DarkFishWater, b.transform.position, Quaternion.identity);
-        //    Instantiate(DarkFishWater, i.transform.position, Quaternion.identity);
-        //    Instantiate(DarkFishWater, d.transform.position, Quaternion.identity);
-        //}
-        //else if (randomNumber == 3)
-        //{
-        //    Instantiate(DarkFishWater, c.transform.position, Quaternion.identity);
-        //    Instantiate(DarkFishWater, h.transform.position, Quaternion.identity);
-        //    Instantiate(DarkFishWater, f.transform.position, Quaternion.identity);
-        //}
     }
 
     // Update is called once per frame
@@ -138,7 +81,6 @@ public class daynight : MonoBehaviour
          
         }
         if (presets == null)
-
         {
             return;
 
@@ -216,11 +158,9 @@ public class daynight : MonoBehaviour
 
         }
         if (TimeOfDay >= 670)
-
         {
 
             afternoon = false;
-            
             night = true;
             midday = false;
             morning = false;

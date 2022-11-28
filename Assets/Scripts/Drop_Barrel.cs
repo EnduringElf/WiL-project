@@ -7,6 +7,8 @@ public class Drop_Barrel : MonoBehaviour
     public GameObject drop_off_point;
     public GameObject Object_to_drop;
 
+    public int amountDropped;
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.B))

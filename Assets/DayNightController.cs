@@ -9,10 +9,10 @@ public class DayNightController : MonoBehaviour
     public GameObject DaynightScript;
     public GameObject waterScript;
 
-    public Volume global;
+    public GameObject player;
     
 
-    public 
+    
 
     // Start is called before the first frame update
     void Start()
@@ -23,16 +23,33 @@ public class DayNightController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(DaynightScript.GetComponent<daynight>().morning == true || DaynightScript.GetComponent<daynight>().night)
+        if (player.GetComponent<Drop_Barrel>().amountDropped >= 50)
         {
-            waterScript.GetComponent<shader_changer>().BlueColor = false;
-            waterScript.GetComponent<shader_changer>().nighttime = true;
-        }else if(DaynightScript.GetComponent<daynight>().midday == true || DaynightScript.GetComponent<daynight>().afternoon == true)
-        {
-            waterScript.GetComponent<shader_changer>().BlueColor = true;
+            if (DaynightScript.GetComponent<daynight>().morning == true || DaynightScript.GetComponent<daynight>().night)
+            {
+                waterScript.GetComponent<shader_changer>().GreenColor = false;
+                waterScript.GetComponent<shader_changer>().nighttime = true;
+            }
+            else if (DaynightScript.GetComponent<daynight>().midday == true || DaynightScript.GetComponent<daynight>().afternoon == true)
+            {
+                waterScript.GetComponent<shader_changer>().GreenColor = true;
+            }
         }
+        else
+        {
+            if (DaynightScript.GetComponent<daynight>().morning == true || DaynightScript.GetComponent<daynight>().night)
+            {
+                waterScript.GetComponent<shader_changer>().BlueColor = false;
+                waterScript.GetComponent<shader_changer>().nighttime = true;
+            }
+            else if (DaynightScript.GetComponent<daynight>().midday == true || DaynightScript.GetComponent<daynight>().afternoon == true)
+            {
+                waterScript.GetComponent<shader_changer>().BlueColor = true;
+            }
+        }
+        
 
-
+        
 
 
 
