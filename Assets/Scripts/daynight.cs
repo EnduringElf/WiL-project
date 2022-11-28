@@ -8,7 +8,8 @@ public class daynight : MonoBehaviour
     [SerializeField] private Light DirectionalLight;
     [SerializeField] private lightingpresets presets;
     [SerializeField, Range(0, 900)] private float TimeOfDay;
-   
+
+    
     //spawn spots
  
     GameObject a;
@@ -32,7 +33,6 @@ public class daynight : MonoBehaviour
   
 
     private void UpdateLighting(float timepercent)
-
     {
         RenderSettings.ambientLight = presets.AmbientColor.Evaluate(timepercent);
         RenderSettings.fogColor = presets.fogcolor.Evaluate(timepercent);
@@ -79,16 +79,19 @@ public class daynight : MonoBehaviour
 
         morning = true;
 
+
+
         TimeOfDay = 215;
-        a = GameObject.Find("FishingSpotSpawner");
-        b = GameObject.Find("FishingSpotSpawner (1)");
-        c = GameObject.Find("FishingSpotSpawner (2)");
-        d = GameObject.Find("FishingSpotSpawner (3)");
-        e = GameObject.Find("FishingSpotSpawner (4)");
-        f = GameObject.Find("FishingSpotSpawner (5)");
-        g = GameObject.Find("FishingSpotSpawner (6)");
-        h = GameObject.Find("FishingSpotSpawner (7)");
-        i = GameObject.Find("FishingSpotSpawner (8)");
+
+        //a = GameObject.Find("FishingSpotSpawner");
+        //b = GameObject.Find("FishingSpotSpawner (1)");
+        //c = GameObject.Find("FishingSpotSpawner (2)");
+        //d = GameObject.Find("FishingSpotSpawner (3)");
+        //e = GameObject.Find("FishingSpotSpawner (4)");
+        //f = GameObject.Find("FishingSpotSpawner (5)");
+        //g = GameObject.Find("FishingSpotSpawner (6)");
+        //h = GameObject.Find("FishingSpotSpawner (7)");
+        //i = GameObject.Find("FishingSpotSpawner (8)");
 
         //Instantiate(DarkFishWater, a.transform.position, Quaternion.identity);
 
@@ -185,7 +188,7 @@ public class daynight : MonoBehaviour
             
         }
 
-        if (TimeOfDay >= 500)
+        if (TimeOfDay >= 270)
 
         {
             morning = false;
@@ -207,7 +210,7 @@ public class daynight : MonoBehaviour
            
 
         }
-        if (TimeOfDay >= 740)
+        if (TimeOfDay >= 670)
 
         {
 

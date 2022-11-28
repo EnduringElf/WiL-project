@@ -40,7 +40,6 @@ public class Shop_ui_manager : MonoBehaviour
     void Update()
     {
         fish = player.GetComponent<Inventory>().InventoryFish;
-
     }
 
     public void DisplayPage()

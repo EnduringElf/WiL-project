@@ -35,7 +35,6 @@ public class FishSpotContrller : MonoBehaviour
     {
         Gamestate = GameObject.Find("player").gameObject;
         FishingControls = GameObject.Find("player").gameObject;
-       
         PerfectZonecontroller = GameObject.Find("PerfectZone");
         
 

@@ -17,7 +17,7 @@ public class WorldFish : MonoBehaviour
         SpawnSpots = GameObject.FindGameObjectsWithTag("Fishing Spot");
         foreach(GameObject i in SpawnSpots)
         {
-            Debug.Log("spawning fishing spots at " + i.transform.position);
+            //Debug.Log("spawning fishing spots at " + i.transform.position);
             Instantiate(FishingSpotSpawn, i.transform);
         }
         GameObject.Find("PerfectZone").SetActive(false);

@@ -28,13 +28,12 @@ public class GameState : MonoBehaviour
     public TMP_Text FishPrice;
 
     public bool CanContinue;
-    
 
-    
-
-
-
-
+    [Header("Shop Interaction")]
+    public GameObject Shop_UI;
+    public GameObject Shop_prompt;
+    public bool Shop_active;
+    public bool Shop_Prompt;
 
     //make new class object for fishing spot//
 
@@ -51,7 +50,9 @@ public class GameState : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (IsFishing == false && Input.GetKeyDown(KeyCode.E))
+        if (IsFishing == false && Input.GetKeyDown(KeyCode.E) 
+            && Shop_prompt == false 
+            && EnterPrompt.activeSelf == true)
         {
             Player.GetComponent<playerControls>().Active = false;
             ZoneController.GetComponent<FishSpotContrller>().Active = true;
@@ -73,6 +74,18 @@ public class GameState : MonoBehaviour
         if(CanContinue == true && Input.GetKeyDown(KeyCode.Escape))
         {
             LeaveMiniGAme();
+        }
+
+        if(Shop_Prompt == true && Input.GetKeyDown(KeyCode.E) && Shop_active == false)
+        {
+            Shop_UI.SetActive(true);
+            Shop_active = true;
+        }
+        else if(Shop_active == true && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Escape)))
+        {
+            Shop_active = false;
+            Shop_UI.SetActive(false);
+
         }
         
     }
@@ -164,5 +177,19 @@ public class GameState : MonoBehaviour
         Prompt(1);
         FishContrls.enabled = false;
         FishGameUi.SetActive(false);
+    }
+
+    public void PromptShop()
+    {
+        Shop_prompt.SetActive(true);
+        Shop_Prompt = true;
+    }
+
+    
+
+    public void ClosePromptShop()
+    {
+        Shop_prompt.SetActive(false);
+        Shop_Prompt = false;
     }
 }

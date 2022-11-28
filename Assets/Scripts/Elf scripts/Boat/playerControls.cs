@@ -30,12 +30,15 @@ public class playerControls : MonoBehaviour
             Vector3 dir = new Vector3(horizontalInput, 0, verticleInput);
             if (horizontalInput != 0)
             {
-                horizontalInput = 0.5f * horizontalInput;
-                rb.AddForce(dir.x * turningspeed, dir.y, 0);
+                //horizontalInput = 0.5f * horizontalInput;
+                transform.Rotate(Vector3.up * turningspeed * horizontalInput * Time.deltaTime);
+                //rb.AddForce(dir.x, dir.y, 0);
+                //this.gameObject.transform.Rotate(new Vector3(0,0, horizontalInput  * turningspeed * Time.deltaTime));
             }
             if(verticleInput != 0)
             {
-                rb.AddForce(0, 0, dir.z * fowardthrust);
+                transform.Translate(Vector3.forward * verticleInput *  fowardthrust * Time.deltaTime);
+                //rb.AddForce(0, 0, dir.z * fowardthrust);
             }
         }
         
