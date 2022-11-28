@@ -1,11 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
+
 
 public class DayNightController : MonoBehaviour
 {
     public GameObject DaynightScript;
     public GameObject waterScript;
+
+    public Volume global;
+    
+
+    public 
 
     // Start is called before the first frame update
     void Start()

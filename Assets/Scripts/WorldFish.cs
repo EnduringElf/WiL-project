@@ -14,6 +14,13 @@ public class WorldFish : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        foreach(Fish i in FishPools[0].Fish_Pool)
+        {
+            i.valuescanChange = true;
+        }
+
+
         SpawnSpots = GameObject.FindGameObjectsWithTag("Fishing Spot");
         foreach(GameObject i in SpawnSpots)
         {

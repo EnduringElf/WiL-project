@@ -157,9 +157,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c53f3e36f91ac42479bca1b29624081e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fishpool:
-  - {fileID: 11400000, guid: 42dbda6df70382141931702f4abae296, type: 2}
-  TimeLeft: 30
+  Fishpool: []
+  TimeLeft: 120
   minusProgress: 1
   Active: 0
   Gamestate: {fileID: 0}

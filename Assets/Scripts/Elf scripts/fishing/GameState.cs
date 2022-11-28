@@ -8,6 +8,7 @@ using TMPro;
 
 public class GameState : MonoBehaviour
 {
+    //public GameObject objective;
     public bool IsFishing;
     [Header("Ui prompts")]
     public GameObject EnterPrompt;

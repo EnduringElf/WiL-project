@@ -102,7 +102,7 @@ Material:
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
     - _ZWrite: 0
-    - _cell_power: 12
+    - _cell_power: 6.38
     - _foam_speed: 0.3
     - _refraxtion_strength: 0.03
     - _voronoi_scale: 1593.42
@@ -113,7 +113,7 @@ Material:
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _foam_color: {r: 45.254833, g: 45.254833, b: 45.254833, a: 1}
-    - _secondary_color: {r: 0.46666133, g: 0.8745111, b: 0.9254889, a: 7.964965e-24}
+    - _secondary_color: {r: 0.46666127, g: 0.8745111, b: 0.9254889, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &2840052303749876543
 MonoBehaviour:

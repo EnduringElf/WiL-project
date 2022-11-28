@@ -10,6 +10,7 @@ public class TemplateSellObject : MonoBehaviour
     public GameObject Tm_Portrait;
     public GameObject Tm_wieght;
     public GameObject Tm_value;
+    public GameObject obj;
     public Fish thisFish = null;
     
 
@@ -42,6 +43,7 @@ public class TemplateSellObject : MonoBehaviour
         }
         GameObject.Find("ShopUi").GetComponent<Shop_ui_manager>().destroyPage();
         GameObject.Find("ShopUi").GetComponent<Shop_ui_manager>().DisplayPage(0);
+        obj.GetComponent<Objective>().DaysDebt += thisFish.FinalValue;
         Destroy(this.gameObject);
         //return thisFish.FinalValue;
     }
