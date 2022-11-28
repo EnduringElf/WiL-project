@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Cape Whitefish
   m_EditorClassIdentifier: 
   Name: Cape Whitefish
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 21300000, guid: 5a8685cee808b4447b59715ee7120775, type: 3}
   BaseCurrency: 16
   Wieght: 1
   MAxRandomWieght: 150
   FinalWieght: 0
   FinalValue: 0
-  valuescanChange: 0
+  valuescanChange: 1

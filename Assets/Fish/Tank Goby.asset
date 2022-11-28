@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Tank Goby
   m_EditorClassIdentifier: 
   Name: Tank Goby
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 21300000, guid: 1753f3b92a4733c408b8c358f797dab8, type: 3}
   BaseCurrency: 16
   Wieght: 1
   MAxRandomWieght: 150
   FinalWieght: 0
   FinalValue: 0
-  valuescanChange: 0
+  valuescanChange: 1

@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Sandelia
   m_EditorClassIdentifier: 
   Name: Sandelia
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 21300000, guid: ce25a185a5e07b54eaad07dba36e1bec, type: 3}
   BaseCurrency: 16
   Wieght: 1
   MAxRandomWieght: 150
   FinalWieght: 0
   FinalValue: 0
-  valuescanChange: 0
+  valuescanChange: 1

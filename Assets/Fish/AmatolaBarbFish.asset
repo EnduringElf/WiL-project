@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: AmatolaBarbFish
   m_EditorClassIdentifier: 
   Name: Amatola Barb
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 21300000, guid: 45e16b44ac49f0247af001757be66272, type: 3}
   BaseCurrency: 16
   Wieght: 1
   MAxRandomWieght: 150
   FinalWieght: 0
   FinalValue: 0
-  valuescanChange: 0
+  valuescanChange: 1

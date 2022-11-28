@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Hypseleoctris Cyprinoides
   m_EditorClassIdentifier: 
   Name: Hypseleotris Cyprinoides
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 21300000, guid: ad306e34339ecdf4fa37a227fa1858bb, type: 3}
   BaseCurrency: 16
   Wieght: 1
   MAxRandomWieght: 150
   FinalWieght: 0
   FinalValue: 0
-  valuescanChange: 0
+  valuescanChange: 1

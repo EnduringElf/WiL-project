@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Siver Labeo
   m_EditorClassIdentifier: 
   Name: Silver Labeo
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 21300000, guid: 9047093adc1d35b468f211c75382470a, type: 3}
   BaseCurrency: 16
   Wieght: 1
   MAxRandomWieght: 150
   FinalWieght: 0
   FinalValue: 0
-  valuescanChange: 0
+  valuescanChange: 1

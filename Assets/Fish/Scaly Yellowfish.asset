@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Scaly Yellowfish
   m_EditorClassIdentifier: 
   Name: Scaly Yellowfish
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 21300000, guid: 9d6ed83e99d629d44a2530a437fefa3c, type: 3}
   BaseCurrency: 16
   Wieght: 1
   MAxRandomWieght: 150
   FinalWieght: 0
   FinalValue: 0
-  valuescanChange: 0
+  valuescanChange: 1

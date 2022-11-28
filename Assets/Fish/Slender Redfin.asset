@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Slender Redfin
   m_EditorClassIdentifier: 
   Name: Slender Redfin
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 21300000, guid: 486abec47bc054b408dc9f9f90f1f87a, type: 3}
   BaseCurrency: 16
   Wieght: 1
   MAxRandomWieght: 150
   FinalWieght: 0
   FinalValue: 0
-  valuescanChange: 0
+  valuescanChange: 1

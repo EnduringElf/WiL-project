@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Austroglanis Barnardi
   m_EditorClassIdentifier: 
   Name: Austroglanis Barnardi
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 21300000, guid: de9115553da71c545a2e51be8f7de79c, type: 3}
   BaseCurrency: 16
   Wieght: 1
   MAxRandomWieght: 150
   FinalWieght: 0
   FinalValue: 0
-  valuescanChange: 0
+  valuescanChange: 1

@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Estuarine Pipefish
   m_EditorClassIdentifier: 
   Name: Estuarine Pipefish
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 21300000, guid: 4355515b0e5a9d94dbf32b006c143580, type: 3}
   BaseCurrency: 16
   Wieght: 1
   MAxRandomWieght: 150
   FinalWieght: 0
   FinalValue: 0
-  valuescanChange: 0
+  valuescanChange: 1

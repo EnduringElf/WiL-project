@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Sharp-tooth Catfish
   m_EditorClassIdentifier: 
   Name: Sharp-tooth Catfish
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 21300000, guid: f2182e11685f82d42b026a164da81ae6, type: 3}
   BaseCurrency: 16
   Wieght: 1
   MAxRandomWieght: 150
   FinalWieght: 0
   FinalValue: 0
-  valuescanChange: 0
+  valuescanChange: 1

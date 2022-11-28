@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Berg River Redfin
   m_EditorClassIdentifier: 
   Name: Berg River Redfin
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 21300000, guid: 20f9904534af31f4a92353ed4406c995, type: 3}
   BaseCurrency: 16
   Wieght: 1
   MAxRandomWieght: 150
   FinalWieght: 0
   FinalValue: 0
-  valuescanChange: 0
+  valuescanChange: 1
