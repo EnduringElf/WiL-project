@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Orange River Mudfish
   m_EditorClassIdentifier: 
   Name: Orange River Mudfish
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 21300000, guid: ff71e0b9ca7be1942b7a2e198e693381, type: 3}
   BaseCurrency: 16
   Wieght: 1
   MAxRandomWieght: 150
   FinalWieght: 0
   FinalValue: 0
-  valuescanChange: 0
+  valuescanChange: 1

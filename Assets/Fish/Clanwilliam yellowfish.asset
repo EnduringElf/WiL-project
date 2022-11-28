@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Clanwilliam yellowfish
   m_EditorClassIdentifier: 
   Name: Clanwilliam Yellowfish
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 21300000, guid: 13ea97ad57cdeba4eb9a6cf9253e41a7, type: 3}
   BaseCurrency: 16
   Wieght: 1
   MAxRandomWieght: 150
   FinalWieght: 0
   FinalValue: 0
-  valuescanChange: 0
+  valuescanChange: 1

@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Cape Galaxias
   m_EditorClassIdentifier: 
   Name: Cape Galaxias
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 21300000, guid: ff3cd7b76133d404b87431ef0d6d0475, type: 3}
   BaseCurrency: 16
   Wieght: 1
   MAxRandomWieght: 150
   FinalWieght: 0
   FinalValue: 0
-  valuescanChange: 0
+  valuescanChange: 1

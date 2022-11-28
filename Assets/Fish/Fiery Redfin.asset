@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Fiery Redfin
   m_EditorClassIdentifier: 
   Name: Fiery Redfin
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 21300000, guid: 71dbe4c3460d56a4daa2810dff375938, type: 3}
   BaseCurrency: 16
   Wieght: 1
   MAxRandomWieght: 150
   FinalWieght: 0
   FinalValue: 0
-  valuescanChange: 0
+  valuescanChange: 1

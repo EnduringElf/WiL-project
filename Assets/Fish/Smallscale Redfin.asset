@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Smallscale Redfin
   m_EditorClassIdentifier: 
   Name: Smallscale Redfin
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 21300000, guid: 62c41a31c09303f46a0f33bba2883327, type: 3}
   BaseCurrency: 16
   Wieght: 1
   MAxRandomWieght: 150
   FinalWieght: 0
   FinalValue: 0
-  valuescanChange: 0
+  valuescanChange: 1

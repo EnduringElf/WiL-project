@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Smallmouth Yellowfish
   m_EditorClassIdentifier: 
   Name: Smallmouth Yellowfish
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 21300000, guid: ffd020147ef17dd4a966c0be00612044, type: 3}
   BaseCurrency: 16
   Wieght: 1
   MAxRandomWieght: 150
   FinalWieght: 0
   FinalValue: 0
-  valuescanChange: 0
+  valuescanChange: 1

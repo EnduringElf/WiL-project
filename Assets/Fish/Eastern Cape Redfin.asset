@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Eastern Cape Redfin
   m_EditorClassIdentifier: 
   Name: Eastern Cape Redfin
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 21300000, guid: 511b6370f7442c84b8bd46f5625b560c, type: 3}
   BaseCurrency: 16
   Wieght: 1
   MAxRandomWieght: 150
   FinalWieght: 0
   FinalValue: 0
-  valuescanChange: 0
+  valuescanChange: 1

@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Moggel
   m_EditorClassIdentifier: 
   Name: Moggel
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 21300000, guid: fb1e0ce3979a9614fbad41f7909d3da9, type: 3}
   BaseCurrency: 16
   Wieght: 1
   MAxRandomWieght: 150
   FinalWieght: 0
   FinalValue: 0
-  valuescanChange: 0
+  valuescanChange: 1
